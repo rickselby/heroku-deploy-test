@@ -8,4 +8,4 @@ release:
   command:
     - ruby -e 'p "hello"'
 run:
-  web: ruby app.rb
+  web: bundle exec ruby app.rb

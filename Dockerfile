@@ -28,4 +28,7 @@ RUN adduser sinatra --disabled-password
 USER sinatra:sinatra
 
 EXPOSE 4567
+
+FROM app AS web
+
 CMD ["ruby", "app.rb"]
