@@ -3,5 +3,9 @@ build:
     web:
       dockerfile: Dockerfile
       target: app
+release:
+  image: web
+  command:
+    - ruby -e 'p "hello"'
 run:
   web: ruby app.rb
