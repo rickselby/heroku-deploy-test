@@ -3,7 +3,5 @@ build:
     web:
       dockerfile: Dockerfile
       target: app
-release:
-  image: web
 run:
   web: ruby app.rb
